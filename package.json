@@ -1,0 +1,55 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "voting bot for peer query curation",
+  "main": "./src/server",
+  "directories": {
+    "test": "test"
+  },
+  "private": true,
+  "scripts": {
+    "test": "npm run lintfix",
+    "lintfix": "./node_modules/.bin/eslint \"**/*.js\" --fix",
+    "lint": "./node_modules/.bin/eslint \"**/*.js\"",
+    "lintstaged": "./node_modules/.bin/lint-staged",
+    "start": "node ./src/server.js",
+    "prettier": "./node_modules/.bin/prettier r --config .prettierrc --write \"**/*.js*\"",
+    "pretty-quick": "./node_modules/.bin/pretty-quick --staged",
+    "kill": "taskkill /f /im node.exe"
+  },
+  "lint-staged": {
+    "*.js": [
+      "./node_modules/.bin/eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peerquery/bot.git"
+  },
+  "keywords": [
+    "bot",
+    "steem",
+    "curation",
+    "peer",
+    "query"
+  ],
+  "author": "dzivenu\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peerquery/bot/issues"
+  },
+  "homepage": "https://github.com/peerquery/bot#readme",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "dsteem": "^0.10.1",
+    "mongodb": "^3.1.9"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.15.2",
+    "pretty-quick": "^1.8.0"
+  }
+}

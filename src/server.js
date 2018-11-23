@@ -15,7 +15,7 @@ http.createServer(function(req, res) {
     //console.log('Visited at: ' + : new Date() + ' by: ' + req);
     res.write('server: ' + process.uptime() + ' os: ' + require('os').uptime());
     res.end();
-}).listen(server_port);
+}).listen(port);
 
 try {
     //run bot on start

@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peerquery/bot.git"
+    "url": "git+https://github.com/peerquery/curation-bot.git"
   },
   "keywords": [
     "bot",
@@ -37,9 +37,9 @@
   "author": "dzivenu\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/peerquery/bot/issues"
+    "url": "https://github.com/peerquery/curation-bot/issues"
   },
-  "homepage": "https://github.com/peerquery/bot#readme",
+  "homepage": "https://github.com/peerquery/curation-bot#readme",
   "dependencies": {
     "dotenv": "^6.1.0",
     "dsteem": "^0.10.1",

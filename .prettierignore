@@ -13,3 +13,4 @@ scripts/
 #these files get caught due to the fact their extension *.json* includes characters *.js*
 package.json
 package-lock.json
+README.md
